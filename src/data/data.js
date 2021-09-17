@@ -10,14 +10,14 @@ export  const sliderItems = [
         id: 2,
         img: "https://i.ibb.co/DG69bQ4/2.png",
         title: "LOUNGEWEAR LOVE",
-        desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+        desc: "YOU ARE THE MOST BEAUTIFUL PERSON IN THE WORLD WHEN YOU FEEL COMFORTABLE.",
         bg: "#f5fafd"
     },  
     {
         id: 3,
         img: "https://i.ibb.co/cXFnLLV/3.png",
         title: "SPRING COLLECTION",
-        desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+        desc: "IT'S TIME TO REVIVE YOUR STYLE. LOOK STUNNING IN ANY SEASON. EVERYWHERE.",
         bg: "#fcf1ed"
     },
 ];
