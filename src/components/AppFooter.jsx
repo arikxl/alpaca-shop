@@ -7,12 +7,6 @@ import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 
 const Container = styled.div`
 display: flex;
-
-    // height: 60vh;
-    // background-color: #fcf5f5;
-    // align-items: center;
-    // justify-content: center;
-    // flex-direction: column;
 `;
 
 const Left = styled.div`
