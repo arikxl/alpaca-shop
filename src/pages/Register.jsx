@@ -54,10 +54,6 @@ const Button = styled.button`
     cursor: pointer;
 `;
 
-// const Container = styled.div``;
-
-
-
 const Register = () => {
     return (
         <Container>

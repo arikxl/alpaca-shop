@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 const Container = styled.div`
     width: 100vw;
     height: 100vh;
@@ -57,7 +56,6 @@ const Link = styled.a`
     cursor: pointer;
 `;
 
-
 const Login = () => {
     return (
         <Container>
@@ -72,7 +70,7 @@ const Login = () => {
                 </Form>
             </Wrapper>
         </Container>
-    )
-}
+    );
+};
 
-export default Login
+export default Login;

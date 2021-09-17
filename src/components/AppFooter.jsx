@@ -87,6 +87,8 @@ const AppFooter = () => {
                     <br />
                     I designed it with almost no CSS. Mainly using styled-components.
                     Tnx to Lama Dev's youtube channel for the inspiration and materials.
+                    <br/>
+                    <small>© arikxl {new Date().getFullYear()}</small>
                 </Desc>
                 <SocialContainer>
                     <SocialIcon>
