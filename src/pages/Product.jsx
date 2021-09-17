@@ -1,13 +1,11 @@
-import { Add, Remove } from '@material-ui/icons';
 import React from 'react';
 import styled from 'styled-components';
-import Announcement from '../components/Announcement';
-import AppFooter from '../components/AppFooter';
+import { Add, Remove } from '@material-ui/icons';
+
 import Navbar from '../components/Navbar';
+import AppFooter from '../components/AppFooter';
 import Newsletter from '../components/Newsletter';
-
-
-
+import Announcement from '../components/Announcement';
 
 const Container = styled.div``;
 const Wrapper = styled.div`
