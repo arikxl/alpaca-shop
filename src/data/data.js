@@ -39,6 +39,7 @@ export const categories = [
       img: "https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
       title: "LIGHT JACKETS",
     },
+
 ];
 
 export const popularProducts = [

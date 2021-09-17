@@ -50,7 +50,6 @@ const Slide = styled.div`
 const ImgContainer = styled.div`
     flex:1;
     height: 100%;
-
 `;
 
 const Image = styled.img`
@@ -65,12 +64,14 @@ const InfoContainer = styled.div`
 const Title = styled.h1`
     font-size: 70px;
 `;
+
 const Description = styled.p`
     margin: 50px 0;
     font-size:20px;
     font-weight:500;
     letter-spacing: 3px;
 `;
+
 const Button = styled.button`
     padding: 10px;
     font-size: 20px;
