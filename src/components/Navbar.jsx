@@ -1,11 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Search } from '@material-ui/icons';
+// import { Search } from '@material-ui/icons';
 import Badge from '@mui/material/Badge';
-import MailIcon from '@mui/icons-material/Mail';
-
-
-// import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
+import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 const Container = styled.div`
     height: 60px;
@@ -26,7 +24,7 @@ const Left = styled.div`
 
 const Language = styled.span`
     font-size:14px;
-    curser: pointer;    
+    cursor: pointer;    
 `;
 
 const SearchContainer = styled.div`
@@ -50,17 +48,18 @@ const Logo = styled.h1`
     font-weight: bold;
 `;
 
-
 const Right = styled.div`
     flex:1;
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 `;
 
 const MenuItem = styled.div`
     font-size: 14px;
-    curser: pointer;
+    margin-left: 25px;
+    cursor: pointer;
 `;
-
 
 const Navbar = () => {
     return (
@@ -70,7 +69,7 @@ const Navbar = () => {
                     <Language>EN</Language>
                     <SearchContainer >
                         <Input />
-                        <Search />
+                        <SearchRoundedIcon style={{ color: "grey", fontSize: 16 }} />
                     </SearchContainer>
                 </Left>
                 <Center>
@@ -80,8 +79,8 @@ const Navbar = () => {
                     <MenuItem>REGISTER</MenuItem>
                     <MenuItem>SIGN IN</MenuItem>
                     <MenuItem>
-                        <Badge badgeContent={4} color="primary">
-                            <MailIcon color="action" />
+                        <Badge badgeContent={4} color="secondary">
+                            <ShoppingCartOutlinedIcon color="action" />
                         </Badge>
                     </MenuItem>
                 </Right>
