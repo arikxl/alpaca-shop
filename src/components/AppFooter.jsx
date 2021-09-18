@@ -2,11 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { LinkedIn, GitHub, Telegram, Room, LocalPhoneRounded, MailOutlineRounded } from '@material-ui/icons';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import { mobile } from '../styles/responsive';
 
 
 
 const Container = styled.div`
 display: flex;
+${mobile({flexDirection: "column-reverse"})};
+
 `;
 
 const Left = styled.div`
@@ -16,7 +19,9 @@ const Left = styled.div`
     padding: 20px;
 `;
 
-const Logo = styled.h1``;
+const Logo = styled.h1`
+${mobile({textAlign: "center"})};
+`;
 
 const Desc = styled.p`
     margin: 20px 0;
@@ -24,7 +29,7 @@ const Desc = styled.p`
 
 const SocialContainer = styled.div`
     display: flex;
-
+    ${mobile({justifyContent: 'center'})};
 `;
 
 const SocialIcon = styled.div`
@@ -43,6 +48,8 @@ const SocialIcon = styled.div`
 const Center = styled.div`
     flex:1;
     padding:20px;
+    ${mobile({display: "none"})};
+
 `;
 
 const Title = styled.h3`

@@ -6,6 +6,7 @@ import AppFooter from '../components/AppFooter';
 import Newsletter from '../components/Newsletter';
 import ProductList from '../components/ProductList';
 import Announcement from '../components/Announcement';
+import { mobile } from '../styles/responsive';
 
 
 const Container = styled.div``;
@@ -21,17 +22,22 @@ const FilterContainer = styled.div`
 
 const Filter = styled.div`
     margin: 20px;
+    ${mobile({margin: "0 20px", display:"flex", flexDirection:"column"})};
 `;
 
 const FilterText = styled.span`
     font-size: 20px;
     font-weight: 600;
     margin-right: 20px;
+    ${mobile({marginRight: 0})};
+
 `;
 
 const Select = styled.select`
     padding: 10px;
     margin-right: 20px;
+    ${mobile({margin: "10px 0"})};
+
 `;
 
 const Option = styled.option``;
@@ -46,7 +52,7 @@ const Products = () => {
                 <Filter>
                     <FilterText>Filter Products:</FilterText>
                     <Select>
-                        <Option disabled defaultValue>Color</Option>
+                        <Option disabled selected>Color</Option>
                         <Option>White</Option>
                         <Option>Black</Option>
                         <Option>Red</Option>
@@ -55,7 +61,7 @@ const Products = () => {
                         <Option>Green</Option>
                     </Select>
                     <Select>
-                        <Option disabled defaultValue>Size</Option>
+                        <Option disabled selected>Size</Option>
                         <Option>SX</Option>
                         <Option>S</Option>
                         <Option>M</Option>
@@ -67,7 +73,7 @@ const Products = () => {
                 <Filter>
                     <FilterText>Sort Products:</FilterText>
                     <Select>
-                        <Option defaultValue>Newest</Option>
+                        <Option selected>Newest</Option>
                         <Option>Price ⬆</Option>
                         <Option>Price ⬇</Option>
                     </Select>
