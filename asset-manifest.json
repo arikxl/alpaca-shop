@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/alpaca-shop/static/css/main.7d28924e.chunk.css",
+    "main.js": "/alpaca-shop/static/js/main.4cb1bb50.chunk.js",
+    "main.js.map": "/alpaca-shop/static/js/main.4cb1bb50.chunk.js.map",
+    "runtime-main.js": "/alpaca-shop/static/js/runtime-main.ad0ddd8d.js",
+    "runtime-main.js.map": "/alpaca-shop/static/js/runtime-main.ad0ddd8d.js.map",
+    "static/js/2.6571f1d7.chunk.js": "/alpaca-shop/static/js/2.6571f1d7.chunk.js",
+    "static/js/2.6571f1d7.chunk.js.map": "/alpaca-shop/static/js/2.6571f1d7.chunk.js.map",
+    "index.html": "/alpaca-shop/index.html",
+    "static/css/main.7d28924e.chunk.css.map": "/alpaca-shop/static/css/main.7d28924e.chunk.css.map",
+    "static/js/2.6571f1d7.chunk.js.LICENSE.txt": "/alpaca-shop/static/js/2.6571f1d7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ad0ddd8d.js",
+    "static/js/2.6571f1d7.chunk.js",
+    "static/css/main.7d28924e.chunk.css",
+    "static/js/main.4cb1bb50.chunk.js"
+  ]
+}
