@@ -1,7 +1,7 @@
 export  const sliderItems = [
     {
         id: 1,
-        img: "https://i.ibb.co/XsdmR2c/1.png",
+        img: "https://i.ibb.co/cXFnLLV/3.png",
         title: "SUMMER SALE",
         desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
         bg: "#fbf0f4"
@@ -15,7 +15,7 @@ export  const sliderItems = [
     },  
     {
         id: 3,
-        img: "https://i.ibb.co/cXFnLLV/3.png",
+        img: "https://i.ibb.co/XsdmR2c/1.png",
         title: "SPRING COLLECTION",
         desc: "IT'S TIME TO REVIVE YOUR STYLE. LOOK STUNNING IN ANY SEASON. EVERYWHERE.",
         bg: "#fcf1ed"
