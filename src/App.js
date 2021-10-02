@@ -7,8 +7,8 @@ import Login from './pages/Login';
 import Product from './pages/Product';
 import Products from './pages/Products';
 import Register from './pages/Register';
-import ProductList from './components/ProductList';
-import ProductItem from './components/ProductItem';
+// import ProductList from './components/ProductList';
+// import ProductItem from './components/ProductItem';
 
 
 const App = () => {
@@ -18,11 +18,11 @@ const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path ="/">
+        <Route exact path ="/alpaca-shop">
           <Home />
         </Route>
         <Route path ="/products/:category">
-          <ProductList />
+          <Products />
         </Route>
         <Route path ="/product/:id">
           <Product />
