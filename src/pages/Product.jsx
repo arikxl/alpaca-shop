@@ -11,6 +11,9 @@ import Announcement from '../components/Announcement';
 import { mobile } from '../styles/responsive';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { addProduct } from '../redux/cartRedux';
+import { useDispatch } from 'react-redux';
+
 
 const Container = styled.div``;
 const Wrapper = styled.div`
@@ -125,6 +128,7 @@ const Product = () => {
     const [quantity, setQuantity] = useState(1);
     const [color, setColor] = useState("");
     const [size, setSize] = useState("");
+    const dispatch = useDispatch()
 
 
     useEffect(() => {
@@ -141,15 +145,16 @@ const Product = () => {
 
     const handleQuantity = (type) => {
         if (type === "dec") {
-        quantity >1 &&   setQuantity(quantity - 1)
+            quantity > 1 && setQuantity(quantity - 1)
         } else {
             setQuantity(quantity + 1)
         };
     };
 
     const handleClick = () => {
-        
-    }
+        dispatch(
+            addProduct({ ...product, quantity, color, size }));
+    };
 
     return (
         <Container>
@@ -168,7 +173,7 @@ const Product = () => {
                             <FilterTitle>Color</FilterTitle>
                             {product.color?.map((color) => (
                                 <FilterColor color={color} key={color}
-                                onClick={() => setColor(color)} />
+                                    onClick={() => setColor(color)} />
                             ))}
 
                             {/* <FilterColor color={product.color[0]} /> */}
@@ -176,7 +181,7 @@ const Product = () => {
                         </Filter>
                         <Filter>
                             <FilterTitle>Size</FilterTitle>
-                            <FilterSize onChange={(e)=> setSize(e.target.value)}>
+                            <FilterSize onChange={(e) => setSize(e.target.value)}>
                                 {product.size?.map((size) => (
                                     <FilterSizeOption key={size}>{size}</FilterSizeOption>
                                 ))}
