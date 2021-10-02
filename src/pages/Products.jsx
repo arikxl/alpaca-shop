@@ -63,21 +63,21 @@ const Products = () => {
         <Container>
             <Announcement />
             <Navbar />
-            <Title >Dresses</Title>
+            <Title >{category}</Title>
             <FilterContainer>
                 <Filter>
                     <FilterText>Filter Products:</FilterText>
-                    <Select name="color" onChange={handleFilters}>
-                        <Option disabled >
+                    <Select name="color" onChange={handleFilters} defaultValue="Color">
+                        <Option  disabled>
                             Color</Option>
-                        <Option>White</Option>
+                        <Option defaultValue>White</Option>
                         <Option>Black</Option>
                         <Option>Red</Option>
                         <Option>Blue</Option>
                         <Option>Yellow</Option>
                         <Option>Green</Option>
                     </Select>
-                    <Select name="size" onChange={handleFilters}>
+                    <Select name="size" onChange={handleFilters} defaultValue="Size">
                         <Option disabled >
                             Size</Option>
                         <Option>SX</Option>

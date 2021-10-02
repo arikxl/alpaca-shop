@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import Badge from '@mui/material/Badge';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
@@ -8,7 +9,7 @@ import { mobile } from '../styles/responsive';
 
 const Container = styled.div`
     height: 60px;
-    ${mobile({height: "50px"})};
+    ${mobile({ height: "50px" })};
 `;
 
 const Wrapper = styled.div`
@@ -16,7 +17,7 @@ const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    ${mobile({padding: "10px 0"})};
+    ${mobile({ padding: "10px 0" })};
 
 `;
 
@@ -29,7 +30,7 @@ const Left = styled.div`
 const Language = styled.span`
     font-size:14px;
     cursor: pointer;  
-    ${mobile({display: "none"})};
+    ${mobile({ display: "none" })};
   
 `;
 
@@ -39,13 +40,13 @@ const SearchContainer = styled.div`
     align-items: center;
     margin-left: 25px;
     padding: 5px;
-    ${mobile({marginLeft: "10px"})};
+    ${mobile({ marginLeft: "10px" })};
 
 `;
 
 const Input = styled.input`
     border: none;
-    ${mobile({width: "50px"})};
+    ${mobile({ width: "50px" })};
 `;
 
 const Center = styled.div`
@@ -55,7 +56,7 @@ const Center = styled.div`
 
 const Logo = styled.h1`
     font-weight: bold;
-    ${mobile({fontSize: "24px", marginLeft:"20px"})};
+    ${mobile({ fontSize: "24px", marginLeft: "20px" })};
 
 `;
 
@@ -64,7 +65,7 @@ const Right = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    ${mobile({justifyContent: "center", flex: 2})};
+    ${mobile({ justifyContent: "center", flex: 2 })};
 
 `;
 
@@ -72,7 +73,7 @@ const MenuItem = styled.div`
     font-size: 14px;
     margin-left: 25px;
     cursor: pointer;
-    ${mobile({fontSize: "12px", marginLeft: "10px"})};
+    ${mobile({ fontSize: "12px", marginLeft: "10px" })};
 
 `;
 
@@ -83,12 +84,14 @@ const Navbar = () => {
                 <Left>
                     <Language>EN</Language>
                     <SearchContainer >
-                        <Input placeholder="Search..."/>
+                        <Input placeholder="Search..." />
                         <SearchRoundedIcon style={{ color: "grey", fontSize: 16 }} />
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <Logo>ALPACA.</Logo>
+                    <Link to="/alpaca-shop">
+                        <Logo>ALPACA.</Logo>
+                    </Link>
                 </Center>
                 <Right>
                     <MenuItem>REGISTER</MenuItem>
