@@ -21,5 +21,10 @@
     "statusBarItem.remoteBackground": "#9c27b0",
     "statusBarItem.remoteForeground": "#e7e7e7"
   },
-  "peacock.color": "#9C27B0"
+  "peacock.color": "#9C27B0",
+  "cSpell.words": [
+    "persistor",
+    "presist",
+    "presisted"
+  ]
 }

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import styled from 'styled-components';
+import Announcement from '../components/Announcement';
+import Navbar from '../components/Navbar';
 import { login } from '../redux/apiCalls';
 import { mobile } from '../styles/responsive';
 
@@ -24,7 +26,6 @@ const Wrapper = styled.div`
     width: 25%;
     background-color: white;
     ${mobile({ width: "80%" })};
-
 `;
 
 const Title = styled.h1`
@@ -82,23 +83,27 @@ const Login = () => {
     }
 
     return (
-        <Container>
-            <Wrapper>
-                <Title>SIGN IN</Title>
-                <Form>
-                    <Input placeholder="Username"
-                        onChange={(e) => setUsername(e.target.value)} />
-                    <Input placeholder="Password"
-                        type="password"
-                        onChange={(e) => setPassword(e.target.value)} />
-                    <Button onClick={handleClick}
-                        disabled={isFetching}>LOGIN</Button>
+        <>
+            <Announcement />
+            <Navbar />
+            <Container>
+                <Wrapper>
+                    <Title>SIGN IN</Title>
+                    <Form>
+                        <Input placeholder="Username"
+                            onChange={(e) => setUsername(e.target.value)} />
+                        <Input placeholder="Password"
+                            type="password"
+                            onChange={(e) => setPassword(e.target.value)} />
+                        <Button onClick={handleClick}
+                            disabled={isFetching}>LOGIN</Button>
                         {error && <Error>Something went wrong...</Error>}
-                    <Link>YOU DONT REMEMBER THE PASSWORD?</Link>
-                    <Link>CREATE A NEW ACCOUNT</Link>
-                </Form>
-            </Wrapper>
-        </Container>
+                        <Link>YOU DONT REMEMBER THE PASSWORD?</Link>
+                        <Link>CREATE A NEW ACCOUNT</Link>
+                    </Form>
+                </Wrapper>
+            </Container>
+        </>
     );
 };
 

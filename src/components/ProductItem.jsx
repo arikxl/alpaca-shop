@@ -66,7 +66,8 @@ const Icon = styled.div`
     }
 `;
 
-const ProductItem = ({ item }) => {
+const ProductItem = ({ item }, key=item._id) => {
+    
     return (
         <Container>
             <Circle />
