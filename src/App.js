@@ -1,5 +1,4 @@
 import {BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
-
 import './styles/App.css';
 import Cart from './pages/Cart';
 import Home from './pages/Home';
@@ -7,13 +6,15 @@ import Login from './pages/Login';
 import Product from './pages/Product';
 import Products from './pages/Products';
 import Register from './pages/Register';
-// import ProductList from './components/ProductList';
-// import ProductItem from './components/ProductItem';
+import { useSelector } from 'react-redux';
+
 
 
 const App = () => {
 
-  const user = true;
+  const user = useSelector((state)=>state.user.currentUser);
+  // const user = false;
+  console.log( user)
 
   return (
     <Router>
@@ -31,10 +32,10 @@ const App = () => {
           <Cart />
         </Route>
         <Route path ="/login">
-          {user ? <Redirect to="/" /> : <Login />}
+          {user ? <Redirect to="/alpaca-shop" /> : <Login />}
         </Route>
         <Route path ="/register">
-        {user ? <Redirect to="/" /> : <Register />}
+        {user ? <Redirect to="/alpaca-shop" /> : <Register />}
         </Route>
       </Switch>
     </Router>

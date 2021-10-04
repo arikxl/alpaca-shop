@@ -97,7 +97,7 @@ const Products = () => {
                     </Select>
                 </Filter>
             </FilterContainer>
-            <ProductList category={category} filters={filters} sort={sort} />
+            <ProductList category={category} filters={filters} sort={sort} key={category} />
             <Newsletter />
             <AppFooter />
 

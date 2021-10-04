@@ -75,7 +75,7 @@ const MenuItem = styled.div`
     margin-left: 25px;
     cursor: pointer;
     ${mobile({ fontSize: "12px", marginLeft: "10px" })};
-
+    text-decoration: none;
 `;
 
 const Navbar = () => {
@@ -92,14 +92,16 @@ const Navbar = () => {
                     </SearchContainer>
                 </Left>
                 <Center>
-                    <Link to="/alpaca-shop">
+                    <Link to="/alpaca-shop" style={{textDecoration: "none"}}>
                         <Logo>ALPACA.</Logo>
                     </Link>
                 </Center>
                 <Right>
                     <MenuItem>REGISTER</MenuItem>
+                    <Link to="/login" style={{textDecoration: "none"}}>
                     <MenuItem>SIGN IN</MenuItem>
-                    <Link to="/cart" >
+                    </Link>
+                    <Link to="/cart" style={{textDecoration: "none"}}>
                         <MenuItem>
                             <Badge badgeContent={cartQuantity} color="secondary">
                                 <ShoppingCartOutlinedIcon color="action" />
